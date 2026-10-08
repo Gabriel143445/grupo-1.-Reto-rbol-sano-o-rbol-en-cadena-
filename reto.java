@@ -57,10 +57,4 @@ public class MainReto {
         }
     }
 
-    public static boolean esCadena(ArbolBinario<String> arbol) {
-        if (arbol.estaVacio()) {
-            return false;
-        }
-        return arbol.altura() == (arbol.contarNodos() - 1);
-    }
-}
+
