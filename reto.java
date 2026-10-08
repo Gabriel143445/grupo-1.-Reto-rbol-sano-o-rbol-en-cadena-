@@ -56,5 +56,11 @@ public class MainReto {
             System.out.println("Error capturado: " + e.getMessage());
         }
     }
-
+    public static boolean esCadena(ArbolBinario<String> arbol) {
+        if (arbol.estaVacio()) {
+            return false;
+        }
+        return arbol.altura() == (arbol.contarNodos() - 1);
+    }
+}
 
